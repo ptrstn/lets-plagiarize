@@ -1,0 +1,6 @@
+[run]
+omit =
+    plagiarize/__main__.py
+    venv/*
+    tests/*
+    setup.py
