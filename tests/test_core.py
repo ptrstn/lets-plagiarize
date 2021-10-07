@@ -12,6 +12,9 @@ def test_plagiarize():
         "the 2011 Fukushima Daiichi nuclear disaster in Japan."
     )
     clean_text = plagiarize(
-        text, source_language="EN", bypass_languages=["ZH", "DE", "RU", "FR", "JA"]
+        text,
+        source_language="EN",
+        bypass_languages=["ZH", "DE", "RU", "FR", "JA"],
+        silent=False,
     )
     assert text != clean_text
