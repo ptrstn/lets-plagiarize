@@ -11,5 +11,7 @@ def test_plagiarize():
         "severity—on the International Nuclear Event Scale, the other being "
         "the 2011 Fukushima Daiichi nuclear disaster in Japan."
     )
-    clean_text = plagiarize(text)
+    clean_text = plagiarize(
+        text, source_language="EN", bypass_languages=["ZH", "DE", "RU", "FR", "JA"]
+    )
     assert text != clean_text

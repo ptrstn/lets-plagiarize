@@ -1,15 +1,15 @@
 import deepl
 
 
-def plagiarize(
-    text, source_language="EN", bypass_languages=["ZH", "DE", "FR", "RU", "ES"]
-):
+def plagiarize(text, source_language, bypass_languages, silent=True):
     current_language = source_language
     next_language = bypass_languages[0]
     bypassed_text = text
 
     for index, bypass_language in enumerate(bypass_languages):
         bypassed_text = deepl.translate(current_language, next_language, bypassed_text)
+        if not silent:
+            print(f"{current_language} -> {next_language}: {bypassed_text}")
         if index + 1 < len(bypass_languages):
             current_language = next_language
             next_language = bypass_languages[index + 1]
