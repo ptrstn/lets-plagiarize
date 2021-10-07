@@ -5,5 +5,6 @@
 # Lets Plagiarize!
 
 ```bash
-pip install --user git+https://github.com/ptrstn/lets-plagiarize
+pip install git+https://github.com/ptrstn/deepl-translate
+pip install git+https://github.com/ptrstn/lets-plagiarize
 ```
