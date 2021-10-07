@@ -35,11 +35,13 @@ def parse_arguments():
 
 def main():
     args = parse_arguments()
-    return plagiarize(
-        text=args.text,
-        source_language=args.language,
-        bypass_languages=args.by,
-        silent=args.silent,
+    print(
+        plagiarize(
+            text=args.text,
+            source_language=args.language,
+            bypass_languages=args.by,
+            silent=args.silent,
+        )
     )
 
 
