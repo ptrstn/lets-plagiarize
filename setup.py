@@ -27,6 +27,6 @@ setup(
     author="Peter Stein",
     license="MIT",
     packages=["plagiarize"],
-    install_requires=[],
+    install_requires=["deepl-translate"],
     entry_points={"console_scripts": ["plagiarize=plagiarize.__main__:main"]},
 )

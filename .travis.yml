@@ -6,6 +6,7 @@ python:
   - "3.8"
 
 install:
+  - pip install git+https://github.com/ptrstn/deepl-translate
   - pip install --upgrade pytest pytest-cov codecov
   - pip install -e .
 
