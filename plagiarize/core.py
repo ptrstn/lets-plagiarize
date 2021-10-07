@@ -1,7 +1,9 @@
 import deepl
 
 
-def plagiarize(text, source_language="EN", bypass_languages=["DE", "FR", "RU", "ES"]):
+def plagiarize(
+    text, source_language="EN", bypass_languages=["ZH", "DE", "FR", "RU", "ES"]
+):
     current_language = source_language
     next_language = bypass_languages[0]
     bypassed_text = text
